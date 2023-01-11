@@ -17,7 +17,7 @@
     <div class="row tab-center mobile-center">
       <div class="col-md-6">
         <div class="video wow fadeInLeft" data-wow-duration=".5s">
-          <img src="images/about-video.jpg" alt="about-video" />
+          <img src="{{ asset('assets/img/pages/user/about-video.jpg') }}" alt="about-video" />
           <div class="video-overlay gradiant-background"></div>
           <a href="https://www.youtube.com/watch?v=kuceVNBTJio" class="video-play" data-effect="mfp-3d-unfold"><i
               class="fa fa-play"></i></a>
@@ -31,7 +31,7 @@
             ea commodo consequat. Duis aute irure dolor.</p>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-          <a href="#" class="button">Download</a>
+          <a href="#" class="button">Masuk</a>
         </div>
       </div><!-- .col -->
     </div><!-- .row -->
@@ -87,7 +87,7 @@
         </div><!-- .col -->
         <div class="col-md-5 pt-100 text-center">
           <div class="fearures-software-mockup wow fadeInLeft" data-wow-duration=".5s">
-            <img src="images/software-screen-b.jpg" alt="software-screen" />
+            <img src="{{ asset('assets/img/pages/user/software-screen-b.jpg') }}" alt="software-screen" />
           </div>
         </div><!-- .col -->
       </div><!-- .row -->
@@ -113,10 +113,14 @@
         <div class="tab-fix">
           <div class="has-carousel software-screens owl-carousel owl-theme" data-items="1" data-loop="true"
             data-auto="true" data-dots="false" data-navs="true">
-            <div class="item"><img src="images/software-screen-a.jpg" alt="software-screen" /></div>
-            <div class="item"><img src="images/software-screen-b.jpg" alt="software-screen" /></div>
-            <div class="item"><img src="images/software-screen-c.jpg" alt="software-screen" /></div>
-            <div class="item"><img src="images/software-screen-d.jpg" alt="software-screen" /></div>
+            <div class="item"><img src="{{ asset('assets/img/pages/user/software-screen-a.jpg') }}"
+                alt="software-screen" /></div>
+            <div class="item"><img src="{{ asset('assets/img/pages/user/software-screen-b.jpg') }}"
+                alt="software-screen" /></div>
+            <div class="item"><img src="{{ asset('assets/img/pages/user/software-screen-c.jpg') }}"
+                alt="software-screen" /></div>
+            <div class="item"><img src="{{ asset('assets/img/pages/user/software-screen-d.jpg') }}"
+                alt="software-screen" /></div>
           </div>
         </div><!-- .tab-fix -->
       </div><!-- .col -->
@@ -169,16 +173,16 @@
       <div class="col-md-7 col-sm-12 col-md-offset-0 text-center">
         <div class="tab-content no-pd steps-screen">
           <div class="tab-pane fade in active" id="tab1">
-            <img src="images/software-screen-a.jpg" alt="step-screen">
+            <img src="{{ asset('assets/img/pages/user/software-screen-a.jpg') }}" alt="step-screen">
           </div>
           <div class="tab-pane fade" id="tab2">
-            <img src="images/software-screen-b.jpg" alt="step-screen">
+            <img src="{{ asset('assets/img/pages/user/software-screen-b.jpg') }}" alt="step-screen">
           </div>
           <div class="tab-pane fade" id="tab3">
-            <img src="images/software-screen-c.jpg" alt="step-screen">
+            <img src="{{ asset('assets/img/pages/user/software-screen-c.jpg') }}" alt="step-screen">
           </div>
           <div class="tab-pane fade" id="tab4">
-            <img src="images/software-screen-d.jpg" alt="step-screen">
+            <img src="{{ asset('assets/img/pages/user/software-screen-d.jpg') }}" alt="step-screen">
           </div>
         </div>
       </div>
@@ -190,7 +194,7 @@
 <!-- Start .pricing-section  -->
 <div id="pricing" class="pricing-section section pb-80">
   <div class="imagebg">
-    <img src="images/pricing-bg.jpg" alt="pricing-bg">
+    <img src="{{ asset('assets/img/pages/user/pricing-bg.jpg') }}" alt="pricing-bg">
   </div>
   <div class="gradiant-background gradiant-overlay gradiant-light"></div>
   <!-- .gradiant-background  /exta div for transparent gradiant overlay /  -->
@@ -739,7 +743,7 @@
 <!-- Start .testimonial-section  -->
 <div id="testimonial" class="testimonial-section section white-bg pb-120">
   <div class="imagebg">
-    <img src="images/testimonial-bg.png" alt="testimonial-bg">
+    <img src="{{ asset('assets/img/pages/user/testimonial-bg.png') }}" alt="testimonial-bg">
   </div>
   <div class="container">
     <div class="section-head text-center">
@@ -757,7 +761,7 @@
           data-navs="false">
           <div class="item text-center">
             <div class="quotes">
-              <img src="images/quote-icon.png" class="quote-icon" alt="quote-icon" />
+              <img src="{{ asset('assets/img/pages/user/quote-icon.png') }}" class="quote-icon" alt="quote-icon" />
               <blockquote>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque
                 penatibus et magnis dis parturient montes nascetur.</blockquote>
               <h6>Andy Lovell</h6>
@@ -768,7 +772,7 @@
           </div>
           <div class="item text-center">
             <div class="quotes">
-              <img src="images/quote-icon.png" class="quote-icon" alt="quote-icon" />
+              <img src="{{ asset('assets/img/pages/user/quote-icon.png') }}" class="quote-icon" alt="quote-icon" />
               <blockquote>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque
                 penatibus et magnis dis parturient montes nascetur.</blockquote>
               <h6>Andy Lovell</h6>
@@ -779,7 +783,7 @@
           </div>
           <div class="item text-center">
             <div class="quotes">
-              <img src="images/quote-icon.png" class="quote-icon" alt="quote-icon" />
+              <img src="{{ asset('assets/img/pages/user/quote-icon.png') }}" class="quote-icon" alt="quote-icon" />
               <blockquote>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque
                 penatibus et magnis dis parturient montes nascetur.</blockquote>
               <h6>Andy Lovell</h6>

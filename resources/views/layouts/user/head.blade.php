@@ -4,7 +4,7 @@
   <meta name="description"
     content="AppsLand is a powerful App Landing HTML Template with full of customization options and features">
   <!-- Fav Icon  -->
-  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
   <!-- Site Title  -->
   <title>AppsLand - App Landing HTML Template</title>
   <!-- Vendor Bundle CSS -->

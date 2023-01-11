@@ -14,8 +14,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="./">
-            <img class="logo logo-light" src="images/logo-white.png" alt="logo" />
-            <img class="logo logo-color" src="images/logo.png" alt="logo" />
+            <img class="logo logo-light" src="{{ asset('assets/img/logo/logo-white.png') }}" alt="logo" />
+            <img class="logo logo-color" src="{{ asset('assets/img/logo/logo.png') }}" alt="logo" />
           </a>
         </div>
 
@@ -42,19 +42,20 @@
         <div class="col-md-8 col-md-offset-2">
           <div class="header-texts">
             <h1 class="cd-headline clip is-full-width wow fadeInUp" data-wow-duration=".5s">
-              <span>Provides Better </span>
+              <span>Saya </span>
               <span class="cd-words-wrapper">
-                <b class="is-visible">Software</b>
-                <b>Quality</b>
-                <b>Support</b>
+                <b class="is-visible" style="background-color:#555;color:#fff;padding:2.5px">Lulus</b>
+                <b style="padding: 2.5px;">Sukses</b>
+                <b style="padding: 2.5px;">Berhasil</b>
               </span>
             </h1>
             <p class="lead wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">Sed ut perspiciatis unde omnis
               iste natus error sit volup tatem amet nascetur penat ibus sceleris accus antium dolore.</p>
             <ul class="buttons">
-              <li><a href="#" class="button wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">Download</a></li>
-              <li><a href="#" class="button button-border button-transparent wow fadeInUp" data-wow-duration=".5s"
-                  data-wow-delay=".9s">Learn More</a></li>
+              <li><a href="/login" class="button wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">Masuk</a>
+              </li>
+              <li><a href="/register" class="button button-border button-transparent wow fadeInUp"
+                  data-wow-duration=".5s" data-wow-delay=".9s">Daftar</a></li>
             </ul>
           </div>
         </div><!-- .col -->
@@ -62,7 +63,7 @@
       <div class="row text-center">
         <div class="col-md-10 col-md-offset-1">
           <div class="header-laptop-mockup wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-            <img src="images/software-screen-a.jpg" alt="software-screen" />
+            <img src="{{ asset('assets/img/pages/user/software-screen-a.jpg') }}" alt="software-screen" />
           </div>
         </div>
       </div>

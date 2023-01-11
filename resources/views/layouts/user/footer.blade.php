@@ -22,7 +22,9 @@
           <li><a href="#"><em class="fa fa-instagram"></em></a></li>
         </ul>
         <ul class="footer-links inline-list">
-          <li>Copyright © 2022 SayaLulus <a target="_blank" href="http://softnio.com/">Softnio</a></li>
+          <li>Copyright © 2022 SayaLulus
+            {{--<a target="_blank" href="http://softnio.com/">Softnio</a> --}}
+          </li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div><!-- .col  -->
