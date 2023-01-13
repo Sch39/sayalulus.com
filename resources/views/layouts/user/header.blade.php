@@ -1,6 +1,6 @@
 <!-- Start .header-section -->
 <div id="home" class="header-section flex-box-middle section gradiant-background header-curbed header-software">
-
+  <div id="particles-js" class="particles-container"></div>
   <div id="navigation" class="navigation is-transparent" data-spy="affix" data-offset-top="5">
     <nav class="navbar navbar-default">
       <div class="container">
