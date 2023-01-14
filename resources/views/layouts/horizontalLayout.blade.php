@@ -35,6 +35,7 @@ $containerNav = ($containerNav ?? 'container-xxl');
 <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
   <div class="layout-container">
 
+
     <!-- BEGIN: Navbar-->
     @if ($isNavbar)
     @include('layouts/sections/navbar/navbar')

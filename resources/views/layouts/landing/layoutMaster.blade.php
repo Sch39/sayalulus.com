@@ -2,19 +2,32 @@
 <html>
 
 <head>
-  @include('layouts/user/head')
+  @include('layouts/landing/head')
 </head>
 
 <body>
+
+
   <div class="container">
+    {{-- banner start --}}
+    <ul class="mybanner">
+      <li>
+        <a href="/progress-note">Cek Progress Disini >></a><span class="close">x</span>
+      </li>
+    </ul>
+
+    {{-- banner end --}}
+
+
     <header class="row">
-      @include('layouts/user/header')
+
+      @include('layouts/landing/header')
     </header>
     <div id="main" class="row">
       @yield('content')
     </div>
     <footer class="row">
-      @include('layouts/user/footer')
+      @include('layouts/landing/footer')
     </footer>
   </div>
 
@@ -35,6 +48,24 @@
 
   <script src="{{ asset('assets/js/jquery.bundle.js') }}"></script>
   <script src="{{ asset('assets/js/script.js') }}"></script>
+
+
+
+
+
+  {{-- mybanner --}}
+  <script>
+    var closebtns = document.getElementsByClassName("close");
+var i;
+
+// Loop through the elements, and hide the parent, when clicked on
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+  </script>
+  {{-- mybanner --}}
 </body>
 
 </html>

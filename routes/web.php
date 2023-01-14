@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Authentications\Admin\AdminAuth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,22 +16,41 @@ use Illuminate\Support\Facades\Route;
 
 $controller_path = 'App\Http\Controllers';
 
-// Main Page Route
-// Route::get('/', $controller_path . '\pages\HomePage@index')->name('pages-home');
-Route::get('/owner29', $controller_path . '\pages\HomePage@index')->name('admin-home');
+// Main/Landing Page Route
+Route::get('/', $controller_path . '\pages\LandingPage@index')->name('landing-page');
 
 
-Route::get('/', $controller_path . '\pages\UserHome@index')->name('user-home');
+// user home
+Route::get('/dashboard', $controller_path . '\pages\user\UserHome@index')->name('user-home');
 
-// Route::get('/page-2', $controller_path . '\pages\Page2@index')->name('pages-page-2');
+Route::get('/progress-note', $controller_path . '\Progress@index')->name('progress');
+
 
 // pages
 Route::get('/pages/misc-error', $controller_path . '\pages\MiscError@index')->name('pages-misc-error');
 
+
+
+
+
 // authentication
 // admin
-Route::get('/owner29/login', $controller_path . '\authentications\LoginBasic@index')->name('admin-login');
-Route::get('/owner29/register', $controller_path . '\authentications\RegisterBasic@index')->name('admin-register');
+Route::group(['prefix' => 'owner290639'], function () {
+
+  // login
+  Route::get('/login', [AdminAuth::class, 'get_login'])->name('admin-login');
+  Route::post('/login', [AdminAuth::class, 'post_login'])->name('admin-post-login');
+  Route::get('/', function () {
+    return redirect()->route('admin-home');
+  });
+
+  Route::group(['middleware' => 'adminauth'], function () {
+    // logged
+    // admin home
+    Route::get('/dashboard', [AdminHome::class, 'index'])->name('admin-home');
+  });
+});
+
 
 
 // authentication

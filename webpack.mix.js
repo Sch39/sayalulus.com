@@ -71,7 +71,7 @@ mix.webpackConfig({
     './blueimp-gallery-video': 'blueimpGallery'
   },
   stats: {
-      children: true,
+    children: true,
   }
 });
 
